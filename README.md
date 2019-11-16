@@ -1,4 +1,4 @@
-# http-proxy-to-socks5
+# http-proxy-to-socks
 
 [简介](https://github.com/oyyd/http-proxy-to-socks/blob/master/READMECN.md)
 
@@ -9,7 +9,7 @@ Many clients support setting up http proxy to speed up network requests and for 
 ## Setup
 
 ```
-npm install -g http-proxy-to-socks5
+npm install -g @alexsorokoletov/http-proxy-to-socks
 ```
 
 Make sure your nodejs version is greater than `4`.
@@ -32,7 +32,7 @@ Options:
   -s, --socks [socks]    specify your socks proxy host, default: 127.0.0.1:1080
   -p, --port [port]      specify the listening port of http proxy server, default: 8080
   -c, --config [config]  read configs from file in json format
-  -s, --skip [hostname1|hostname2] skip proxy for hostname1 and hostname2 and so on, default localhost|127.0.0.1
+  --skip [hostname1|hostname2] skip proxy for hostname1 and hostname2 and so on, default localhost|127.0.0.1
   --level [level]        log level, vals: info, error
 ```
 

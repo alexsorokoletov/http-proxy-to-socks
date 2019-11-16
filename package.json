@@ -1,11 +1,11 @@
 {
-  "name": "http-proxy-to-socks5",
-  "version": "1.2.0",
+  "name": "@alexsorokoletov/http-proxy-to-socks",
+  "version": "1.2.6",
   "description": "hpts(http-proxy-to-socks) is a nodejs client to convert socks proxy into http proxy",
   "main": "lib/server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexsorokoletov/http-proxy-to-socks"
+    "url": "git+https://github.com/alexsorokoletov/http-proxy-to-socks.git"
   },
   "scripts": {
     "build": "babel src --out-dir lib",
@@ -21,7 +21,7 @@
   "bin": {
     "hpts": "./bin/hpts.js"
   },
-  "author": "oyyd <oyydoibh@gmail.com>",
+  "author": "Alex Sorokoletov <alex@sorokoletov.coom>",
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.1",
@@ -46,5 +46,12 @@
       "<rootDir>/src"
     ],
     "testRegex": "(\\.|/)(test|spec)\\.js$"
+  },
+  "bugs": {
+    "url": "https://github.com/alexsorokoletov/http-proxy-to-socks/issues"
+  },
+  "homepage": "https://github.com/alexsorokoletov/http-proxy-to-socks#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
