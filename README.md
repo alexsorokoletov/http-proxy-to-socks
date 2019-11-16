@@ -1,6 +1,4 @@
-# http-proxy-to-socks
-
-[![build](https://api.travis-ci.org/oyyd/http-proxy-to-socks.svg?branch=master)](https://travis-ci.org/oyyd/http-proxy-to-socks)
+# http-proxy-to-socks5
 
 [简介](https://github.com/oyyd/http-proxy-to-socks/blob/master/READMECN.md)
 
@@ -11,7 +9,7 @@ Many clients support setting up http proxy to speed up network requests and for 
 ## Setup
 
 ```
-npm install -g http-proxy-to-socks
+npm install -g http-proxy-to-socks5
 ```
 
 Make sure your nodejs version is greater than `4`.
@@ -19,7 +17,7 @@ Make sure your nodejs version is greater than `4`.
 ## Usage
 
 ```
-hpts -s 127.0.0.1:1080 -p 8080
+hpts -s 127.0.0.1:1080 -p 8080 -s localhost|google.com|microsoft.com
 ```
 
 This will start a process listening on `8080` as a http proxy. It will convert http requests into socks requests and send them to port `1080`. Please make sure your socks service is available at the corresponding port.
@@ -34,6 +32,7 @@ Options:
   -s, --socks [socks]    specify your socks proxy host, default: 127.0.0.1:1080
   -p, --port [port]      specify the listening port of http proxy server, default: 8080
   -c, --config [config]  read configs from file in json format
+  -s, --skip [hostname1|hostname2] skip proxy for hostname1 and hostname2 and so on, default localhost|127.0.0.1
   --level [level]        log level, vals: info, error
 ```
 
